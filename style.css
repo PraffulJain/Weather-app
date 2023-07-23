@@ -1,0 +1,249 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+
+    background-image: url(./assets/bg.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:fit-content;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-variant: small-caps;
+
+}
+
+.tab-box{
+    font-weight:700;
+    display: flex;
+    justify-content:space-evenly;
+    color: rgb(8, 205, 245);
+    cursor: pointer;
+}
+
+.search-box{
+    display: none;
+}
+
+
+.search-box.active{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    width: 90%;
+
+    
+}
+.search{
+    margin-top: 40px;
+    min-width: 400px;
+    padding: 0.55rem;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    font-weight: 700;
+    border: skyblue;
+    color: rgb(79, 72, 135);
+    background-color: lightblue;
+    letter-spacing: .5px;
+    /* border: 2px solid black ; */
+}
+.search:focus{
+    outline: white;
+}
+
+
+.search::placeholder{
+    color: rgb(92, 92, 205);
+}
+
+.searchBtn{
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    border-radius:40%;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    transform:translateY(14%);
+    background-color: lightblue;
+
+
+}
+
+.grant-location{
+    display: none;
+}
+
+.grant-location.active{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grant-location img{
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.grant-btn{
+    background-color: rgb(23, 23, 205);
+    font-size: 1.2rem;
+    color: whitesmoke;
+    padding: .8rem;
+    border: none;
+    margin: 2vh;
+    opacity: 1;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px skyblue;
+}
+
+.grant-location p:first-of-type{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(54, 196, 224);
+    margin-bottom: 1rem;
+
+}
+
+.grant-location p:last-of-type{
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: .8;
+    color: rgb(54,196,224);
+
+}
+
+.loading-box{
+    display: none;
+}
+
+
+.loading-box.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading-box img{
+    border: none;
+    border-radius: 20%;
+}
+
+
+.loading-box p{
+    font-weight: 800;
+    font-size: large;
+    color: rgb(72, 72, 233);
+    font-variant: small-caps;
+}
+
+
+.parametersBox{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.parameters{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    border: 5px solid rgb(4, 97, 237);
+    font-size: 1.2rem;
+    font-weight:600;
+    margin:1rem;
+    color:antiquewhite;
+    padding: 1rem 3rem;
+}
+.parameters img{
+    height: 3rem;
+    width: 5rem;  
+    margin-bottom: .5rem;
+    background-color: none;
+    border: none;
+}
+
+.tab.current-tab{
+    background-color: rgb(249, 249, 231);
+    opacity: .9;
+    text-decoration:underline;
+    padding: .4rem;
+    text-underline-offset: .2rem;
+    color: rgb(86, 86, 239);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px lightblue;
+}
+
+.userInfo-box{
+    visibility: hidden;
+}
+
+.userInfo-box.active{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+p[data-cityName]{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: .5rem;
+    color: lightgrey;
+    
+}
+
+img[countryFlag]{
+    width: 4rem;
+    height: 3rem;
+}
+
+p[data-weatherDesc]{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    color: lightgrey;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+img[data-weatherIcon]{
+    width: 3rem;
+
+}
+
+p[data-windspeed],p[data-humidity],p[data-cloud]{
+    font-weight:lighter;
+    margin: .2rem;
+}
