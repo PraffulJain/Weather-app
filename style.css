@@ -247,3 +247,7 @@ p[data-windspeed],p[data-humidity],p[data-cloud]{
     font-weight:lighter;
     margin: .2rem;
 }
+p[data-temp]{
+     color:lightgrey;
+    font-weight: 900;
+    font-size:2 rem;}
